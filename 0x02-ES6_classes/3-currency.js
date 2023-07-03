@@ -1,30 +1,40 @@
+/**
+ * Implementing a class
+ */
+
 export default class Currency {
+  /**
+     * Creating a class called "currency"
+     *
+     * @param {string} code - the symbpl of the currency
+     * @param {string} name - the name of the currency
+     */
   constructor(code, name) {
-    this.code = code;
-    this.name = name;
+    this._code = code;
+    this._name = name;
   }
 
-  get code() {
-    return this._code;
-  }
-
-  set code(value) {
-    this._code = value;
+  set name(val) {
+    if (typeof val === 'string') {
+      this._name = val;
+    }
   }
 
   get name() {
     return this._name;
   }
 
-  set name(value) {
-    this._name = value;
+  set code(val) {
+    if (typeof val === 'string') {
+      this._code = val;
+    }
   }
 
-  /**
-   * Creates the full string representation of this Currency.
-   * @returns {String}
-   */
+  get code() {
+    return this._code;
+  }
+
   displayFullCurrency() {
-    return `${this.name} (${this.code})`;
+    return `${this._name} (${this._code})`;
   }
 }
