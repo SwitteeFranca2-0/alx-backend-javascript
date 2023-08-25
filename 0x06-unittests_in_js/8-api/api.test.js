@@ -4,7 +4,7 @@ const {expect}= require('chai')
 describe('API', () => {
     describe('GET /', () => {
         it('should have the correct status code', (done) => {
-            request.get('http://localhost:7865', (error, response) => {
+            request.get('http://localhost:7865', (error, response, body) => {
                     expect(response.statusCode).to.equal(200);
                     done();
                 });
