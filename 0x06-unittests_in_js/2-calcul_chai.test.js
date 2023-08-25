@@ -1,7 +1,7 @@
 const { expect } = require('chai')
 calculateNumber = require('./1-calcul.js')
 
-describe('Handle two values based on the given type', () => {
+describe('calculateNumber', () => {
     describe('type == "SUM"', ()=>{
         it('should return the sum of two float numbers given', () => {
             const result = calculateNumber('SUM', 1.2, 3.7)
