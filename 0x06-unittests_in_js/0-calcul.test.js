@@ -23,5 +23,9 @@ describe('calculate_number_Function', () => {
         const result = calculateNumber(-0.7, -0.2);
         assert.strictEqual(result, -1)
     })
+    it('should return the correct sum of an integer and a float number', () =>{
+        const result = calculateNumber(4, 0.9);
+        assert.strictEqual(result, 5)
+    })
 })
 
