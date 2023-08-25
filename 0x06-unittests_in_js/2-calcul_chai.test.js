@@ -2,7 +2,7 @@ const { expect } = require('chai')
 calculateNumber = require('./1-calcul.js')
 
 describe('Handle two values based on the given type', () => {
-    describe('type === "SUM"', ()=>{
+    describe('type == "SUM"', ()=>{
         it('should return the sum of two float numbers given', () => {
             const result = calculateNumber('SUM', 1.2, 3.7)
             expect(result).to.equal(5)
@@ -28,7 +28,7 @@ describe('Handle two values based on the given type', () => {
             expect(result).to.equal(5)
         })
     })
-    describe('type === "DIVIDE"', () => {
+    describe('type == "DIVIDE"', () => {
         it('should return the correct division of two float numbers given', () => {
             const result = calculateNumber('DIVIDE', 1.2, 3.7)
             expect(result).to.equal(0.25)
@@ -54,7 +54,7 @@ describe('Handle two values based on the given type', () => {
             expect(result).to.equal(4)
         })
     })
-    describe('type === SUBTRACT', () => {
+    describe('type == SUBTRACT', () => {
         it('should return the difference of two float numbers given', () => {
             const result = calculateNumber('SUBTRACT', 1.2, 3.7)
             expect(result).to.equal(-3)
