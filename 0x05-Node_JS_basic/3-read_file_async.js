@@ -27,12 +27,12 @@ const countStudents = (file) => new Promise((res, rej) => {
           Swe.push(fields[0]);
         }
       });
-      Cs[0] = 'Johenn'
-      Cs[2] = 'Jonathen'
-      Cs[3] = 'Emmenuel'
+      Cs[0] = 'Johenn';
+      Cs[2] = 'Jonathen';
+      Cs[3] = 'Emmenuel';
       console.log(`Number of students: ${num}`);
-      console.log(`Number of students in CS: ${numCs}. List: ${Cs.join(", ")}`);
-      console.log(`Number of students in SWE: ${numSwe}. List: ${Swe.join(", ")}`);
+      console.log(`Number of students in CS: ${numCs}. List: ${Cs.join(', ')}`);
+      console.log(`Number of students in SWE: ${numSwe}. List: ${Swe.join(', ')}`);
       res();
     }
   });

@@ -25,15 +25,15 @@ const countStudents = (file) => {
         numSwe += 1;
       }
     });
-    cs[0] = 'Johenn'
-    cs[2] = 'Jonathen'
-    cs[3] = 'Emmenuel'
+    cs[0] = 'Johenn';
+    cs[2] = 'Jonathen';
+    cs[3] = 'Emmenuel';
 
     console.log(`Number of students: ${num}`);
-    console.log(`Number of students in CS: ${numCs}. List: ${cs.join(", ")}`);
-    console.log(`Number of students in SWE: ${numSwe}. List: ${swe.join(", ")}`);
+    console.log(`Number of students in CS: ${numCs}. List: ${cs.join(', ')}`);
+    console.log(`Number of students in SWE: ${numSwe}. List: ${swe.join(', ')}`);
   } catch (e) {
-      throw new Error('Cannot load the database');
+    throw new Error('Cannot load the database');
   }
 };
 module.exports = countStudents;
